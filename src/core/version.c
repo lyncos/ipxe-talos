@@ -36,6 +36,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #include <config/general.h>
 #include <config/branding.h>
 
+
 /**
  * Create wide-character version of string
  *

@@ -18,7 +18,7 @@ sanboot --no-describe --drive 0x80
 goto start
 
 :install
-kernel https://pxe.factory.talos.dev/image/2d61dd07b20062062ea671b4d01873506103b67c0f7a4c3fb6cf4ee85585dcb8/v1.7.3/kernel-amd64 talos.platform=metal console=ttyS0 console=tty0 init_on_alloc=1 slab_nomerge pti=on consoleblank=0 nvme_core.io_timeout=4294967295 printk.devkmsg=on ima_template=ima-ng ima_appraise=fix ima_hash=sha512 talos.config.dhcp.interface=enp1s0f1 talos.config=http://10.200.80.252/something/{mac}
+kernel https://pxe.factory.talos.dev/image/2d61dd07b20062062ea671b4d01873506103b67c0f7a4c3fb6cf4ee85585dcb8/v1.7.3/kernel-amd64 talos.platform=metal console=ttyS0 console=tty0 init_on_alloc=1 slab_nomerge pti=on consoleblank=0 nvme_core.io_timeout=4294967295 printk.devkmsg=on ima_template=ima-ng ima_appraise=fix ima_hash=sha512 talos.config.dhcp.interface=enp1s0f1 talos.config=http://10.200.80.252/something/
 initrd https://pxe.factory.talos.dev/image/2d61dd07b20062062ea671b4d01873506103b67c0f7a4c3fb6cf4ee85585dcb8/v1.7.3/initramfs-amd64.xz
 boot
 
